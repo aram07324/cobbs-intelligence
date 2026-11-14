@@ -1,15 +1,15 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–7 — Complete
+## Phases 0–8 — Complete
 
-## Phase 8 — Security Evidence Graph — Complete
+## Phase 9 — Remediation Engineering and Verification — Complete
 
 Delivered:
-- GraphEdge model (tenant-scoped, typed, evidence-linked)
-- create / neighbors / bounded traverse
-- API /graph/edges, /neighbors, /traverse
-- Cross-tenant isolation
-- Migration 20261115_0007
-- 6 tests passing
+- RemediationPlan with PRODUCTION approval + rollback requirements
+- IsolatedTestRun (sandbox only)
+- VerificationResult (author cannot self-verify; regression detection)
+- API /remediation/*
+- Migration 20261115_0008
+- 8 tests passing
 
-## Phase 9+ — Awaiting authorization
+## Phase 10+ — Awaiting authorization
