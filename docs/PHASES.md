@@ -1,16 +1,17 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–3 — Complete
+## Phases 0–4 — Complete
 
-## Phase 4 — COBBS CORE: Security Operations — Complete
+## Phase 5 — Threat Intelligence and Knowledge Base — Complete
 
 Delivered:
-- Alert ingestion API
-- Normalization, classification (SSH brute-force, login anomaly, suspicious process/IP, prompt-injection)
-- IOC extraction, evidence with SHA-256
-- Incident creation with MITRE mapping (pattern-based), investigation timeline
-- Tenant-scoped APIs
-- Migration 20261115_0003
-- Tests passing
+- ThreatIntelRecord (live/cached/starter, verification, freshness)
+- IOC enrichment interface + StarterReputationProvider
+- KnowledgeDocument + KnowledgeChunk
+- Chunking, deterministic local embeddings, cosine retrieval
+- Starter MITRE/CWE/OWASP/NIST excerpts with real source URIs
+- API: /api/v1/intel/enrich, /knowledge/retrieve, /knowledge/seed-starter
+- Citations never fabricated; content labeled untrusted
+- Migration 20261115_0004
 
-## Phase 5+ — Awaiting authorization
+## Phase 6+ — Awaiting authorization
