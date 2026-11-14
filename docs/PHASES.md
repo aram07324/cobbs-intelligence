@@ -1,15 +1,13 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–9 — Complete
+## Phases 0–10 — Complete
 
-## Phase 10 — Continuous Security Monitoring — Complete
+## Phase 11 — Dashboard and User Experience — Complete
 
 Delivered:
-- MonitorSchedule + MonitorJobRun
-- Job types: assessment, posture, cert_expiry, intel_refresh, drift, recurrence
-- Duplicate prevention; authz expiry; notification interfaces
-- API /monitoring/*
-- Migration 20261115_0009
-- 6 tests passing
+- Next.js 14 App Router frontend (dark security UI)
+- Pages: Overview, Incidents, Investigation, Assets, Findings, Remediation, Approvals, Evidence, Reports, AI Activity
+- Sidebar, SeverityBadge, API client
+- Dockerfile + .env.example
 
-## Phase 11+ — Awaiting authorization
+## Phase 12+ — Awaiting authorization
