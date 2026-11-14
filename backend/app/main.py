@@ -6,7 +6,7 @@ from collections.abc import AsyncIterator
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import health
+from app.api import ai, auth, health, intel, security_ops
 from app.core.config import get_settings
 from app.core.logging import get_logger, setup_logging
 
@@ -32,10 +32,10 @@ def create_app() -> FastAPI:
 
     app = FastAPI(
         title=settings.app_name,
-        version="0.1.0",
+        version="0.5.0",
         description=(
             "COBBS Intelligence — autonomous cybersecurity intelligence platform. "
-            "Phase 1 foundation only; operational security features not yet present."
+            "Phase 5: threat intelligence and knowledge base."
         ),
         lifespan=lifespan,
         docs_url="/docs" if not settings.is_production else None,
@@ -50,9 +50,11 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    # Routes
     app.include_router(health.router)
-    # Future: app.include_router(..., prefix=settings.api_prefix)
+    app.include_router(auth.router, prefix=settings.api_prefix)
+    app.include_router(ai.router, prefix=settings.api_prefix)
+    app.include_router(security_ops.router, prefix=settings.api_prefix)
+    app.include_router(intel.router, prefix=settings.api_prefix)
 
     return app
 
