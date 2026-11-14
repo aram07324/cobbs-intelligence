@@ -1,31 +1,25 @@
 # COBBS Intelligence — Development Phases
 
-Controlled, independently verifiable implementation plan.
+## Phase 0 — Architecture
+**Status:** Complete
 
-## Phase 1 — Foundation Scaffolding (CURRENT)
+## Phase 1 — Project Foundation
+**Status:** Complete
 
-**Status:** Complete (this commit)
+## Phase 2 — Identity, Authorization and Audit
+**Status:** Complete
 
 Delivered:
-- Monorepo layout
-- FastAPI application factory, settings, structured logging
-- Health / ready endpoints
-- SQLAlchemy async + Alembic
-- Core models: `audit_events` (hash-chained), `evidence`
-- Audit service with deterministic SHA-256 chaining
-- Docker Compose (Postgres + pgvector, Redis)
-- Basic unit tests (config, health, audit chain)
-- Security baseline (no secrets, env example, documented limitations)
+- User registration & authentication (bcrypt, JWT)
+- Organization / tenant + memberships
+- RBAC foundation
+- Auth deps (get_current_user, require_roles, require_organization)
+- Deny-by-default
+- Asset, AssessmentAuthorization, TargetScope, Approval models
+- MFA-ready fields
+- Hash-chained audit on register/login
+- Migration 20261115_0002
+- 12 tests passing
 
-**Not in scope:** Auth, AI providers, scanners, workers beyond skeleton, frontend, real findings.
-
-## Future Phases (not yet authorized)
-
-- Phase 2: Authentication & authorization foundation (users, roles, scopes)
-- Phase 3: AI provider adapters + FREE_FIRST routing
-- Phase 4: Evidence store & provenance hardening
-- Phase 5: CORE alert ingestion & basic correlation
-- Phase 6: SECURITY asset inventory (READ_ONLY)
-- ... (further phases defined only when authorized)
-
-Each phase must be authorized before work begins. After completion: tests, documentation, commit, push, report, stop.
+## Phase 3+
+Awaiting authorization.
