@@ -1,13 +1,5 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–10 — Complete
+## Phases 0–12 — Complete
 
-## Phase 11 — Dashboard and User Experience — Complete
-
-Delivered:
-- Next.js 14 App Router frontend (dark security UI)
-- Pages: Overview, Incidents, Investigation, Assets, Findings, Remediation, Approvals, Evidence, Reports, AI Activity
-- Sidebar, SeverityBadge, API client
-- Dockerfile + .env.example
-
-## Phase 12+ — Awaiting authorization
+See docs/PROJECT_STATUS.md, SECURITY_MODEL.md, DEPLOYMENT.md, KNOWN_LIMITATIONS.md, OPERATOR_RUNBOOK.md, ARCHITECTURE_VALIDATION.md.
