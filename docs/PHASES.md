@@ -1,16 +1,15 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–5 — Complete
+## Phases 0–6 — Complete
 
-## Phase 6 — Asset Discovery and Attack Surface Management — Complete
+## Phase 7 — Vulnerability Intelligence and Risk Engine — Complete
 
 Delivered:
-- SSRF protection (private/loopback/link-local/metadata/DNS-rebinding)
-- Assessment authorization + target scope (deny by default)
-- Discovery jobs: register, dns, domain_inventory, tls
-- Asset observations + attack-surface snapshots
-- API /asm/authorizations, /asm/discover, /asm/jobs/{id}
-- Migration 20261115_0005
-- 15 tests passing
+- CVERecord + Finding models
+- Starter CVEs with CVSS/CWE/KEV
+- Contextual risk scoring + dedup
+- API /vuln/*
+- Migration 20261115_0006
+- Tests passing
 
-## Phase 7+ — Awaiting authorization
+## Phase 8+ — Awaiting authorization
