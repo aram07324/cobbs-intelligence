@@ -1,15 +1,15 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–6 — Complete
+## Phases 0–7 — Complete
 
-## Phase 7 — Vulnerability Intelligence and Risk Engine — Complete
+## Phase 8 — Security Evidence Graph — Complete
 
 Delivered:
-- CVERecord + Finding models
-- Starter CVEs with CVSS/CWE/KEV
-- Contextual risk scoring + dedup
-- API /vuln/*
-- Migration 20261115_0006
-- Tests passing
+- GraphEdge model (tenant-scoped, typed, evidence-linked)
+- create / neighbors / bounded traverse
+- API /graph/edges, /neighbors, /traverse
+- Cross-tenant isolation
+- Migration 20261115_0007
+- 6 tests passing
 
-## Phase 8+ — Awaiting authorization
+## Phase 9+ — Awaiting authorization
