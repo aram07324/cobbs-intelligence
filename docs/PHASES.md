@@ -1,15 +1,15 @@
 # COBBS Intelligence — Development Phases
 
-## Phases 0–8 — Complete
+## Phases 0–9 — Complete
 
-## Phase 9 — Remediation Engineering and Verification — Complete
+## Phase 10 — Continuous Security Monitoring — Complete
 
 Delivered:
-- RemediationPlan with PRODUCTION approval + rollback requirements
-- IsolatedTestRun (sandbox only)
-- VerificationResult (author cannot self-verify; regression detection)
-- API /remediation/*
-- Migration 20261115_0008
-- 8 tests passing
+- MonitorSchedule + MonitorJobRun
+- Job types: assessment, posture, cert_expiry, intel_refresh, drift, recurrence
+- Duplicate prevention; authz expiry; notification interfaces
+- API /monitoring/*
+- Migration 20261115_0009
+- 6 tests passing
 
-## Phase 10+ — Awaiting authorization
+## Phase 11+ — Awaiting authorization
